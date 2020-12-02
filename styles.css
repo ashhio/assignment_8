@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap');
+
+h1, h2, nav, p, ul, a, tr{
+    font-family: 'Asap';
+}
+
+h1{
+    color: #2E3341;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2{
+    font-size: 18px;
+    color: rgba(201,120,0,1);
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom:28px;
+}
+
+p, ul, a, tr{
+    font-size: 14px;
+}
+
+a{
+    color: #729DC5;
+}
+
+.circle-border{
+   border-style: solid;
+   border-radius: 50%;
+   border-width: 1px;
+   border-color: #2E3341;
+}
+
+.container-blue{
+    background: #2E3341;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.container-yellow{
+    background: #FFF6E8;
+    padding: 28px;
+}
+
+.container-yellow>p{
+    color: #818181;
+}
+
+
+
+.navbar-custom {
+    background-color: rgba(255,255,255,0);
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(201,120,0,.8);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: rgba(201,120,0,1);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(201,120,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: rgba(201,120,0,0);
+  } 
+
+  .stripe-blue{
+      background-color: #EAF1F6;
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  
+  }
+
+  .btn-primary{
+      background-color: #C97800;
+      border-color: rgba(201,120,0,0);
+      font-size: 14px;
+      font-family: 'Asap';
+      border-radius: 0;
+  }

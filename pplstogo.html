@@ -8,21 +8,59 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+
+    <script>
+        new Splide( '.splide' ).mount();
+    </script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '.splide' ).mount();
+        } );
+    </script>
     <title>Plano Public Library To Go</title>
+    
   </head>
   <body>
-    <nav>
-      projects
-      about me
-      contact
-    </nav>
-    <h1>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-custom">
+          <div class="container">
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav nav-fill w-100">
+               <li class="nav-item">
+                <a class="nav-link" href="index.html">projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">about me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+   
+        <div class="d-flex justify-content-center align-items-center pt-5 mt-5"> 
+            <div class="pr-5">
+    <h1 class="text-right">
         Plano Public Library To Go
     </h1>
-    <p>
+    <p class="text-right">
       Redesigning an app for the Plano Public Library System
     </p>
-    <img src="Assets/images/bookshelves.png" alt="person looking at a bookshelf while holding a book">
+</div>
+
+        <img src="Assets/images/bookshelves.png" alt="person looking at a bookshelf while holding a book">
+    </div>
+
+
+    <div class= "row justify-content-center pt-5 mt-5 pb-5 mb-5">
+        <div class="col-xl-6 col-md-8 col-sm-10">
     <h2>
         Overview
     </h2>
@@ -32,6 +70,10 @@
         I redesigned the app to make it easier for users to access the library catalog and learn more about what 
         services the library has to offer.
     </p>
+</div>
+</div>
+<div class= "row justify-content-center stripe-blue pt-5 mt-5 pb-5 mb-5">
+    <div class="col-xl-6 col-md-8 col-sm-10">
     <h2>
         The Problem
     </h2>
@@ -54,6 +96,10 @@
         If the app's UI is updated and user experience is improved, residents will be more satisfied with the app and can take full advantage 
         of what the public library has to offer.
     </p>
+</div>
+</div>
+<div class= "row justify-content-center pt-5 mt-5 pb-5 mb-5">
+    <div class="col-xl-6 col-md-8 col-sm-10">
     <h2>
         Identifying User and Business Needs
     </h2>
@@ -64,6 +110,9 @@
             <li>Improved error messages & error prevention</li>
             <li>Browse for books based on genre, subject, etc (like a library) rather than just searching</li>
         </ul>
+    </p>
+    <br>
+    <p>
         <b>Business Needs (assumed, based on original app’s design)</b>
         <ul>
             <li>Needs to showcase library events and services and online resources</li>
@@ -72,6 +121,10 @@
             <li>Needs to function like the library catalog (search for books, put books on hold, check holds, account balance, renew books, etc)</li>
         </ul>
     </p>
+</div>
+</div>
+<div class= "row justify-content-center  pt-5 mt-5 pb-5 mb-5">
+    <div class="col-xl-6 col-md-8 col-sm-10">
     <h2>
       Heuristic Evaluation  
     </h2>
@@ -80,12 +133,7 @@
         Some of the problems I found in the app include confusing language and labels and limited navigation freedom. 
         I also noticed that the font size was small, the text was cramped, and there was a lack of visual hierarchy in the app.
     </p>
-    <table>
-        <thead>
-            <tr>
-                <th scope = "col">Usability Heuristics</th>
-            </tr>
-        </thead>
+    <table class="table">
         <tbody>
             <tr>
                 <th scope = "row">Visibility of System Status</td>
@@ -123,17 +171,30 @@
             </tr>
         </tbody>
     </table>
-    <h2>
-        Prototype 
-    </h2>
-    <p>
-        I created a prototype using the wireframe from the previous step. 
-        I used the desktop version of the Plano Library catalog and the current app to inform my visual design decisions. T
-        he library seems to be going for a friendly, minimalistic look, and they use rainbow colors.
-        To improve readability, I used larger fonts, typefaces that had ample contrast, and language that users could easily understand. 
-        I also made sure that buttons and links were appropriately sized and spaced, and updated the design to look more modern.
-    </p>
-    <img src="Assets/images/prototype.png" alt="screenshot of many mobile prototype screens">
+</div>
+</div>
+<div class= "row justify-content-center  pt-5 mt-5 pb-5">
+    <div class="col-xl-6 col-md-8 col-sm-10">
+        <h2>
+            Prototype 
+        </h2>
+        <p>
+            I created a prototype using the wireframe from the previous step. 
+            I used the desktop version of the Plano Library catalog and the current app to inform my visual design decisions. T
+            he library seems to be going for a friendly, minimalistic look, and they use rainbow colors.
+            To improve readability, I used larger fonts, typefaces that had ample contrast, and language that users could easily understand. 
+            I also made sure that buttons and links were appropriately sized and spaced, and updated the design to look more modern.
+        </p>
+    </div>
+</div>
+<div class="row justify-content-center "> 
+    <div class="col-xl-8 col-md-10 text-center mb-5">
+    <img src="Assets/images/prototype.png" alt="screenshot of many mobile prototype screens" class=
+"img-fluid">
+</div>
+</div>
+<div class= "row justify-content-center  pt-5 mt-5 pb-5 mb-5">
+    <div class="col-xl-6 col-md-8 col-sm-10">
     <h2>
         Testing
     </h2>
@@ -153,10 +214,31 @@
             <li>Find out ways to make the prototype more visually appealling</li>
         </ul>
     </p>
+</div>
+</div>
+<div class= "row justify-content-center  pt-5 mt-5 pb-5 mb-5">
+    <div class="col-xl-6 col-md-8 col-sm-10">
     <h2>
         Solution
     </h2>
-    <!--insert slideshow-->
+    <div id="image-slider" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="Assets/images/Slide1.jpeg">
+                </li>
+                <li class="splide__slide">
+                    <img src="Assets/images/Slide2.jpeg">
+                </li>
+                <li class="splide__slide">
+                    <img src="Assets/images/Slide3.jpeg">
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class= "row justify-content-center  pt-5 mt-5 pb-5 mb-5">
+        <div class="col-xl-6 col-md-8 col-sm-10">
     <h2>
         Conclusion
     </h2>
@@ -170,8 +252,11 @@
         In the future, I would like to learn how to construct usability tests that I can run throughout the design process, recruit many participants, 
         and process more data to improve my designs.
     </p>
-    <a href="https://www.figma.com/proto/sQZ8ztJZlvQK735uaj7UAV/ppls-redesign-prototype-version-2?node-id=38%3A0&scaling=scale-down" target="_">VIEW PROTOTYPE</button>
-
+    <a class="btn btn-primary" href="https://www.figma.com/proto/sQZ8ztJZlvQK735uaj7UAV/ppls-redesign-prototype-version-2?node-id=38%3A0&scaling=scale-down" target="_" role="button">VIEW PROTOTYPE</a>
+    </div>
+</div>
+    <script src="Assets/js/slider.js"></script>
+    <script src="Assets/libraries/splide-2.4.20/dist/js/splide.min.js"></script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
