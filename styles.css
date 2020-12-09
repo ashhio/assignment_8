@@ -141,8 +141,14 @@ a {
   .gray{
       filter: grayscale();
   }
+  .small-resume{
+    display: none;
+}
 
-  @media only screen and (max-width: 600px) {
+.normal-resume{
+    display:block; 
+}
+  @media (max-width: 600px) {
     .small-mobile-title {
      font-size: 28px;
     }
@@ -157,5 +163,13 @@ a {
 
     .small-mobile-img{
             width:40%;
+    }
+
+    .small-resume{
+        display: block;
+    }
+
+    .normal-resume{
+        display:none; 
     }
   }
