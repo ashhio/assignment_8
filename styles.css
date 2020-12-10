@@ -145,6 +145,17 @@ a {
     display: none;
 }
 
+.fixed-bottom{
+    position:fixed;
+    bottom: 50px;
+   right: 50px;
+   left: auto;
+  
+ 
+}
+body{
+    margin-bottom: 100px;
+}
 .normal-resume{
     display:block; 
 }
@@ -152,7 +163,7 @@ a {
     .small-mobile-title {
      font-size: 28px;
     }
-    h2, p{
+    h2, p, li{
         padding-left:20px;
         padding-right:20px;
     }
@@ -173,3 +184,5 @@ a {
         display:none; 
     }
   }
+
+  html { scroll-behavior: smooth; }
