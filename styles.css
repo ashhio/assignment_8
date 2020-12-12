@@ -27,6 +27,12 @@ a {
 
 }
 
+
+a:hover {
+    text-decoration: none;
+
+}
+
 .circle-border{
    border-style: solid;
    border-radius: 50%;
@@ -68,6 +74,16 @@ a {
    
 }
 
+/* change the link color */
+.navbar-custom-dark .navbar-nav .nav-link {
+    color: black;
+}
+/* change the color of active or hovered links */
+.navbar-custom-dark .nav-item.active .nav-link,
+.navbar-custom-dark .nav-item:hover .nav-link {
+    color: #99a0a7;
+}
+
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
@@ -107,7 +123,7 @@ a {
       text-decoration: none;
   }
 
-  .bg, .bg_2{ 
+  .bg, .bg_2, .bg_3{ 
     
       position: absolute;
       top: 0;
