@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,8 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Resume</title>
 </head>
+
 <body>
     <div class="container-fluid pb-5 mb-5">
+        <!-- Bootstrap navbar -->
         <nav class="navbar navbar-expand-sm navbar-custom-dark">
             <div class="container">
                 <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
@@ -35,8 +38,11 @@
                 </div>
             </div>
         </nav>
+        <!-- Header -->
         <h1 class="pt-5 mt-5 pb-5 mb-5 small-mobile-title animate__animated animate__fadeIn">resume</h1>
+        <!-- Desktop resume -->
         <div class="normal-resume">
+            <!-- Education secton -->
             <div class="row justify-content-center mr-0">
                 <div class="col-xl-5 col-sm-6 m-1 panel panel10">
                     <h2 class="text">Education</h2>
@@ -80,6 +86,7 @@
                     </p>
                 </div>
             </div>
+            <!-- Skills section -->
             <div class="row justify-content-center mr-0">
                 <div class="col-xl-2 col-sm-2 m-1 panel panel11">
                     <h2 class="text">
@@ -108,6 +115,7 @@
                     </p>
                 </div>
             </div>
+            <!-- Experience section -->
             <div class="row justify-content-center mr-0">
                 <div class="col-xl-5 col-sm-6 m-1 panel panel12">
                     <h2 class="text">
@@ -136,12 +144,14 @@
                     </p>
                 </div>
             </div>
+            <!-- Avademic projects section-->
             <div class="row justify-content-center mr-0 ">
                 <div class="col-xl-5 col-sm-6 m-1 panel panel13">
                     <h2 class="text">Academic Projects
                     </h2>
                     <p class="text">
                         <b>Multimedia Cyberlearning</b>
+                    </p>
                     <ul class="text">
                         <li>Designed experiment to discover effects of interactivity in cyberlearning methods</li>
                         <li>Constructed knowledge tests to gather data</li>
@@ -150,7 +160,6 @@
                             trends</li>
                         <li>Followed protocol and guidelines for human subjects participation</li>
                     </ul>
-                    </p>
                 </div>
                 <div class="col-sm-2 col-xs-12 panel panel13">
                     <p class="text">
@@ -167,6 +176,7 @@
                 <div class="col-xl-5 col-sm-6 m-1 panel panel13">
                     <p class="text">
                         <b>SurviVR: Police Training Simulator</b>
+                    </p>
                     <ul class="text">
                         <li>Worked in team of 5 to develop Terry Stop VR police training simulation using design
                             specifications given by CTO</li>
@@ -175,7 +185,6 @@
                         <li>Demonstrated experience in modular programming resulting reusable UI </li>
                         <li>Utilized clear documentation to improve clarity for other teammates</li>
                     </ul>
-                    </p>
                 </div>
                 <div class="col-sm-2 col-xs-12 panel panel13">
                     <br>
@@ -187,10 +196,11 @@
                 </div>
             </div>
         </div>
+        <!-- Small/mobile (collapsible) resume -->
         <div class="small-resume animate__animated animate__fadeIn">
+            <!-- Education secton -->
             <h2>Education</h2>
-            <a data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false"
-                aria-controls="collapseExample">
+            <a data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
                 <p>
                     <b>Carnegie Mellon University – School of Computer Science</b>
                     <br>
@@ -208,8 +218,7 @@
                 </p>
             </div>
             <br>
-            <a data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
-                aria-controls="collapseExample">
+            <a data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
                 <p>
                     <b>The University of Texas at Dallas</b>
                     <br>
@@ -226,9 +235,8 @@
                 </p>
             </div>
             <br>
-            <h2 class>
-                Skills
-            </h2>
+            <!-- Skills section-->
+            <h2> Skills </h2>
             <p class="m-1"><b>Coding</b>
                 <br>
                 Java, C#, C++, JavaScript, HTML/CSS
@@ -242,11 +250,11 @@
                 Adobe CC, Figma, InVision Studio, Blender, Unity
             </p>
             <br>
+            <!-- Experience section-->
             <h2>
                 Volunteer Experience
             </h2>
-            <a data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
-                aria-controls="collapseExample">
+            <a data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
                 <p><b>The WonderSeed Foundation</b>
                     <br>
                     UX & Graphic Design Volunteer
@@ -265,11 +273,11 @@
                     <li>Collaborated with another designer to produce mockups for a website redesign</li>
                 </ul>
             </div>
-            <h2>Academic Projects
-            </h2>
+            <!--Academic projects section-->
+            <h2>Academic Projects </h2>
             <p>
                 <a data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false"
-                    aria-controls="collapseExample">
+                    aria-controls="collapse4">
                     <b>Multimedia Cyberlearning</b>
                     <br>
                     The University of Texas at Dallas
@@ -289,7 +297,7 @@
             </div>
             <p>
                 <a data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false"
-                    aria-controls="collapseExample">
+                    aria-controls="collapse5">
                     <b>SurviVR: Police Training Simulator</b>
                     <br>
                     The University of Texas at Dallas
@@ -316,8 +324,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+    <!-- GreenSock and GreenSock ScrollTrigger-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <!-- custom JS script -->
     <script src="Assets/scripts/animation.js"></script>
 </body>
+
 </html>

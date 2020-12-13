@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap');
 
+/*enable smooth scrolling*/
+html { 
+    scroll-behavior: smooth; 
+}
+
+/*add margin to body*/
+body{
+    margin-bottom: 100px;
+}
+
+/*add font family to all text elements*/
 h1, h2, nav, p, ul, a, tr{
     font-family: 'Asap';
 }
@@ -26,10 +37,16 @@ a {
     color: #729DC5;
 }
 
+/*remove underline when hovering over text*/
+.custom-text-hover:hover{
+    text-decoration: none;
+}
+
 a:hover {
     text-decoration: none;
 }
 
+/*border around headshot photo*/
 .circle-border{
    border-style: solid;
    border-radius: 50%;
@@ -54,6 +71,7 @@ a:hover {
     color: #818181;
 }
 
+/*makes navbar background transparent*/
 .navbar-custom {
     background-color: rgba(255,255,255,0);
 }
@@ -79,10 +97,12 @@ a:hover {
     color: #99a0a7;
 }
 
+/*svg path for bootstrap navbar hamburger icon*/
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-  
+ 
+/*change color of hamburger icon*/
 .custom-toggler.navbar-toggler {
     border-color: rgba(201,120,0,0);
 } 
@@ -105,6 +125,7 @@ a:hover {
     border-radius: 0;
   }
 
+  /*animate.css styling and animation timing adjustmnets*/
 .animate__animated.animate__fadeInUp {
     --animate-duration: 0.5s;
 }
@@ -113,10 +134,8 @@ a:hover {
     box-shadow: 0px 0px 9px 8px rgba(0, 0, 0, 0.1);
 }
 
-.custom-text-hover:hover{
-    text-decoration: none;
-}
 
+/*styling for parallax scrolling background*/
 .bg, .bg_2, .bg_3{ 
     position: absolute;
     top: 0;
@@ -129,6 +148,7 @@ a:hover {
     background-repeat: no-repeat;
 }
 
+/*styling for parallax scrolling background*/
 section {
     position: relative;
     min-height: 370px;
@@ -147,13 +167,10 @@ section {
 }
 
 .gray{
-    filter: grayscale();
+    filter: grayscale(100%);
 }
 
-.small-resume{
-    display: none;
-}
-
+/*positioning for arrow that takes users to top of screen*/
 .fixed-bottom{
     position:fixed;
     bottom: 50px;
@@ -161,14 +178,17 @@ section {
     left: auto;
 }
 
-body{
-    margin-bottom: 100px;
+/*hide mobile version of resume by default*/
+.small-resume{
+    display: none;
 }
 
+/*show desktop version of resume by default*/
 .normal-resume{
     display:block; 
 }
 
+/*media query for mobile devices or very small screens*/
 @media (max-width: 600px) {
     .small-mobile-title {
         font-size: 28px;
@@ -196,6 +216,3 @@ body{
     }
 }
 
-html { 
-    scroll-behavior: smooth; 
-}

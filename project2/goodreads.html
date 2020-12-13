@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -11,8 +12,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>Goodreads</title>
 </head>
+
 <body>
   <div class="container-fluid stripe-blue pb-5 mb-5">
+    <!-- Bootstrap navbar -->
     <nav class="navbar navbar-expand-sm navbar-custom">
       <div class="container">
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
@@ -35,6 +38,7 @@
         </div>
       </div>
     </nav>
+      <!-- Header -->
     <div class="d-flex justify-content-center align-items-center pt-5 mt-5 animate__animated animate__fadeIn">
       <div class="pr-4">
         <h1 class="text-right small-mobile-title">
@@ -49,6 +53,7 @@
   </div>
   <div class="row justify-content-center pt-5 mt-5 pb-5 mb-5 mr-0">
     <div class="col-xl-6 col-md-8 col-sm-10 panel panel14 ml-3">
+      <!-- Overview  section -->
       <h2 class="text">
         Overview
       </h2>
@@ -59,12 +64,14 @@
       </p>
     </div>
   </div>
+    <!-- Arrow to scroll to top of page -->
   <div class="fixed-bottom">
-    <a onClick="window.scrollTo(0, 0)"><img src="../Assets/images/arrow.png"></a>
+    <a onClick="window.scrollTo(0, 0)"><img src="../Assets/images/arrow.png" alt="arrow pointing up"></a>
   </div>
   <!--Photo by Maxim Ilyahov on Unsplash-->
   <section>
     <div class="bg_3"></div>
+        <!-- Problem section -->
     <div class="row justify-content-center pt-5 mt-5 pb-5 mb-5 mr-0">
       <div class="col-xl-6 col-md-8 col-sm-10 panel panel15 ml-3">
         <h2 class="blue-text text">
@@ -72,7 +79,7 @@
         </h2>
         <p class="white-text text">
           Goodreads has a monopoly over all other book-discussion sites. It has great potential and a wide user base,
-          but <a href="https://onezero.medium.com/almost-everything-about-goodreads-is-broken-662e424244d5" target="_">
+          but <a href="https://onezero.medium.com/almost-everything-about-goodreads-is-broken-662e424244d5" target="_blank">
             according to this article, Goodreads has not delivered on its promises.</a> Functionality issues and
           limitations
           leave users unsatisfied and wanting more. The founders of Goodreads intended the site to be a place to
@@ -100,6 +107,7 @@
       </div>
     </div>
   </section>
+      <!-- Solution section -->
   <div class="row justify-content-center  pt-5 mt-5 mr-0">
     <div class="col-xl-6 col-md-8 col-sm-10 panel panel16">
       <h2 class="text ml-3">
@@ -107,6 +115,7 @@
       </h2>
     </div>
   </div>
+    <!-- Solution slides -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -123,37 +132,58 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="Assets/images/Slide1_2.jpeg" alt="First slide">
+        <img class="d-block w-100" src="Assets/images/Slide1_2.jpeg" alt="First slide showing original and redesigned navbar.
+        Redesign changes: Moved recommendations out of the Browse section because book recommendations are a cornerstone of Goodreads. Combined 
+        chat, inbox, and group notifications to a messages area to save space. Updated to modern icons.">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="Assets/images/Slide2_2.jpeg" alt="Second slide">
+        <img class="d-block w-100" src="Assets/images/Slide2_2.jpeg" alt="Second slide showing original and redesigned profile page.
+        Redesign changes: Increased text size to improve readability. Removed extra fields from the bio section that don't inform others 
+        a user's taste in books.">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="Assets/images/Slide3_2.jpeg" alt="Third slide">
+        <img class="d-block w-100" src="Assets/images/Slide3_2.jpeg" alt="Third slide showing original and redesigned profile page.
+        Redesign changes: Moved favorite genres from the sidebar to the top of a user's profile so others can easily see if they share favorite
+        genres.">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="Assets/images/Slide4_2.jpeg" alt="Third slide">
+        <img class="d-block w-100" src="Assets/images/Slide4_2.jpeg" alt="Fourth slide showing original and redesigned profile page.
+        Redesign changes: Added a book compatibility test that compares how many similar books and ratings you have with another user.
+        Describes how many books in common you have with another user. Both are preexisting features which were accessible under the More button on a user
+        profile. By bringing out this feature, we can foster connections between people that like similar books.">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="Assets/images/Slide5_2.jpeg" alt="Third slide">
+        <img class="d-block w-100" src="Assets/images/Slide5_2.jpeg" alt="Fifth slide showing original and redesigned bookshelves section.
+        Redesign changes: Increased the text of books and bookshelves on profiles to help users make a connection with others based on books.
+        View contents of bookshelves directly on profiles to quickly scan other people's books. 5 star rated books are larger for more emphasis.">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="Assets/images/Slide6_2.jpeg" alt="Third slide">
+        <img class="d-block w-100" src="Assets/images/Slide6_2.jpeg" alt="Sixth slide showing original and redesigned friends sidebar.
+        Redesign changes: Combined Friends and Following to Following to promote connections between people that users may not know in real life.">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="Assets/images/Slide7_2.jpeg" alt="Third slide">
+        <img class="d-block w-100" src="Assets/images/Slide7_2.jpeg" alt="Seventh slide showing original and redesigned friends sidebar.
+        Redesign changes: Cut out extra details about friends on profile page to provide more links to people the user follows. Cut out extra details about favorite
+        autors on profile page to provide more links to favorite authors.">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="Assets/images/Slide8_2.jpeg" alt="Third slide">
+        <img class="d-block w-100" src="Assets/images/Slide8_2.jpeg" alt="Eighth slide showing original and redesigned friends sidebar.
+        Redesign changes: Move groups from the bottom of the profile page to the sidebar for more visibility so users can easily discover new groups.">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="Assets/images/Slide9_2.jpeg" alt="Third slide">
+        <img class="d-block w-100" src="Assets/images/Slide9_2.jpeg" alt="Ninth slide showing original and redesigned user updates.
+        Redesign changes: Reduced the size of recent updates feed on profile page. I believe updates are not as important as emphasizing the user's favorite
+        books or groups. Replaced text with icons for a more modern feel.">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="Assets/images/Slide10_2.jpeg" alt="Third slide">
+        <img class="d-block w-100" src="Assets/images/Slide10_2.jpeg" alt="Tenth slide showing original and redesigned recommendations page.
+        Redesign changes: Moved sidebar to the left for consistency. Increased the amount of books displayed for easy scanning. Increased the size of book 
+        covers and fonts for readability.">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="Assets/images/Slide11_2.jpeg" alt="Third slide">
+        <img class="d-block w-100" src="Assets/images/Slide11_2.jpeg" alt="Eleventh slide showing original and redesigned bookshelves page.
+        Redesign changes: reduced visual clutter by decreasing the size of the breadcrumb trail. Reduced visual clutter by removing unnecessary elements linke number of 
+        books per shelf.">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -165,6 +195,7 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+    <!-- Conclusion section -->
   <div class="stripe-yellow">
     <div class="row justify-content-center  pt-5 mt-5 pb-5 mb-5 mr-0">
       <div class="col-xl-6 col-md-8 col-sm-10 panel panel17 ml-3">
@@ -184,7 +215,7 @@
         </p>
         <a class="btn btn-primary"
           href="https://www.figma.com/proto/Ok3yOUEAS8bPDIw19eAZRe/goodreads-redesign?node-id=18%3A3&scaling=min-zoom"
-          target="_" role="button">VIEW MOCKUP</a>
+          target="_blank" role="button">VIEW MOCKUP</a>
       </div>
     </div>
   </div>
@@ -195,8 +226,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
+    <!-- GreenSock and GreenSock ScrollTrigger-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+   <!-- custom JS script -->
   <script src="Assets/scripts/animation.js"></script>
 </body>
+
 </html>
